@@ -33,7 +33,7 @@
     <div class="container_contact flex">
         <div class="warp_content_contact">
             <h1 class="title">GET IN TOUCH</h1>
-            <form action="" class="form_warp">
+            <form action="" class="form_warp" onsubmit="return false;">
                 <div class="label_input flex">
                     <label for="name">Name</label>
                     <input class="ipn" type="text" id="name" name="name" placeholder="" required>
@@ -55,11 +55,12 @@
                     <textarea  class="ipn ipn_message" id="your_message" name="your_message" placeholder="" required></textarea>
                 </div>
                 <div class="btn_form flex">
-                    <input type="submit" value="sumbit" class="btn_contact btn_contact_home ">
+                    <input type="submit" onclick="abc(event)" value="submit" class="btn_contact btn_contact_home">
                 </div>
             </form>
         </div>
     </div>
+    <script src="/assets/js/contact.js"></script>
 </body>
 
 </html>
