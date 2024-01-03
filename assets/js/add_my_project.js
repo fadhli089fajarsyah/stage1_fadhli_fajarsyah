@@ -21,9 +21,9 @@ function addProject(event) {
     const starDate = document.getElementById("star_date").value;
     const endDate = document.getElementById("end_date").value;
     const description = document.getElementById("descriptions").value;
-    let uploadedFile = document.getElementById("upload_image").files; // Ambil URL dari file yang di-upload
+    let uploadedFile = document.getElementById("upload_image").files;
 
-    uploadedFile = URL.createObjectURL(uploadedFile[0]); // Perhatikan bahwa saya mengubah upload_image menjadi uploadedFile
+    uploadedFile = URL.createObjectURL(uploadedFile[0]); 
 
     // Dapatkan nilai dari teknologi button yang dipilih
     let teknologi = "";
