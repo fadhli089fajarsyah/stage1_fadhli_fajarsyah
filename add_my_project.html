@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar ">
+        <div class="navbar_content flex">
+            <!-- nav left -->
+            <div class="wrapping_nav_left flex">
+                <img src="/assets/img/dw.png" alt="" srcset="" class="logo_nav">
+                <ul class="lists_link_nav flex">
+                    <li>
+                        <a class="link  ac" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="link actived" href="add_my_project.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="contact.html" class="btn_contact btn_nav">contact Me</a>
+        </div>
+    </nav>
+
+    <div class="container_add_my_project">
+        <div class="form_add_my_project flex">
+            <h1>ADD MY PROJECT</h1>
+            <form action="" onsubmit="addProject(event)">
+                <div class="label_input flex">
+                    <label for="project_name">project_name</label>
+                    <input class="ipn" type="text" id="project_name" name="project_name" placeholder="" required>
+                </div>
+                <div class="star_end_date flex">
+                    <div class="label_input flex">
+                        <label for="star_date">star_date</label>
+                        <input class="ipn" type="date" id="star_date" name="star_date" placeholder="" required>
+                    </div>
+                    <div class="label_input flex">
+                        <label for="end_date">end_date</label>
+                        <input class="ipn" type="date" id="end_date" name="end_date" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="label_input flex">
+                    <label class="" for="description">description</label>
+                    <textarea name="description" id="descriptions" cols="40" rows="5"></textarea>
+                </div>
+
+
+                <div class="warp_ck_teknologi">
+                    <label for="ck_ipn">teknologi</label>
+                    <div class="">
+                        <input class="ck_ipn" type="radio" id="node_js" name="ck_ipn" value="node_js" placeholder=""
+                            required>
+                        <label for="node_js">node_js</label>
+
+                        <input class="ck_ipn" type="radio" id="next_js" name="ck_ipn" value="next_js" placeholder=""
+                            required>
+                        <label for="next_js">next_js</label>
+                    </div>
+                    <div class="">
+                        <input class="ck_ipn" type="radio" id="react_js" name="ck_ipn" value="react_js" placeholder=""
+                            required>
+                        <label for="react_js">react_js</label>
+
+                        <input class="ck_ipn" type="radio" id="typeScript" name="ck_ipn" value="typeScript"
+                            placeholder="" required>
+                        <label for="typeScript">typeScript</label>
+                    </div>
+                </div>
+                <div class="label_input flex">
+                    <label for="upload_image" class="custom-file-label">upload_image</label>
+                    <input class="custom-file-upload" type="file" id="upload_image" name="upload_image"
+                        placeholder="atack" hidden required>
+                </div>
+                <div class="btn_form flex">
+                    <input type="submit" value="submit" class="btn_contact btn_contact_home">
+                </div>
+            </form>
+        </div>
+
+        <div class="my_project">
+            <h1 class="title_center flex">MY PROJECT</h1>
+            <div class="warp_my_project flex" id="warp_my_project">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="/assets/js/add_my_project.js"></script>
+</body>
+
+</html>
