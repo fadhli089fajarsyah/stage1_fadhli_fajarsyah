@@ -38,6 +38,12 @@ body {
 }
 
 /* navbar */
+.nav_hbr{
+    display: none;
+}
+.hbr{
+    display: none;
+}
 .navbar {
     position: fixed;
     top: 0;
@@ -62,6 +68,7 @@ body {
 
 .lists_link_nav {
     justify-content: center;
+    margin-left: 30px;
 }
 
 .logo_nav {
@@ -129,6 +136,10 @@ body {
 
 .link_download_cv {
     margin: 20px 0px 20px 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
 }
 
 
@@ -225,20 +236,24 @@ body {
 }
 
 /* add my project  */
-.my_project{
+.my_project {
     justify-content: center;
     align-items: center;
 }
-.title_center{
+
+.title_center {
     justify-content: center;
     align-items: center;
 }
-.container_add_my_project{
+
+.container_add_my_project {
     margin-top: 100px;
 }
-.warp_ck_teknologi{
+
+.warp_ck_teknologi {
     margin-bottom: 20px;
 }
+
 .form_add_my_project {
     width: 100%;
     justify-content: center;
@@ -266,7 +281,7 @@ body {
 }
 
 .card_my_project {
-    flex-direction: column; 
+    flex-direction: column;
     display: flex;
     width: 25%;
     background-color: rgb(255, 255, 255);
@@ -333,13 +348,38 @@ body {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-.tekx_card_project{
+
+.tekx_card_project {
     margin: 0px;
     font-size: 10px;
 }
 
+.btn_add {
+    margin-right: 0;
+}
+
+.form_add {
+    width: 50%;
+}
+
+.ipn_add {
+    margin-bottom: 20px;
+}
+
+.lb {
+    margin-bottom: 10px;
+}
+
+.ck_ipn {
+    margin-right: 20px;
+}
+
+.add_tk {
+    margin-top: 10px;
+}
+
 /* detail */
-.warp_detail{
+.warp_detail {
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
@@ -352,47 +392,58 @@ body {
     -o-border-radius: 8px;
     padding: 30px;
 }
-.top_detail{
+
+.top_detail {
     justify-content: center;
     gap: 50px;
     align-items: center;
 }
-.right_detail{
+
+.right_detail {
     width: 30%;
     text-align: left;
     flex-direction: column;
 }
-.img_detail{
+
+.img_detail {
     width: 50%;
     height: 300px;
     justify-content: center;
     align-items: center;
 }
-.duration{
+
+.duration {
     align-items: center;
 }
-.icn_teknologi_detail{
+
+.icn_teknologi_detail {
     width: 25px;
     height: auto;
 }
-.duration{
+
+.duration {
     margin-right: 10px;
 }
-.title_right_detail{
+
+.title_right_detail {
     margin: 0;
 }
-.detai_duration{
+
+.detai_duration {
     margin-bottom: 30px;
 }
-.lk_project{
+
+.lk_project {
     justify-content: start;
     text-align: left;
     margin: 0;
     margin-top: 10px;
 }
-.deskription_detail{
+
+.deskription_detail {
     text-align: initial;
 }
+
 /* hover hover */
 .link:hover {
     color: black;
@@ -404,6 +455,14 @@ body {
     color: rgb(255, 255, 255);
 
 }
+
+.description_card_project {
+    width: 100%;
+    /* Anda bisa menyesuaikan lebar sesuai kebutuhan */
+    word-wrap: break-word;
+    /* Memastikan pematahan kata jika konten melebihi lebar */
+}
+
 
 .icn_card:hover {
     transform: scale(1.1);
@@ -424,6 +483,7 @@ body {
 .ipn:hover {
     background-color: #eaeaea;
 }
+
 .custom-file-label:hover {
     background-color: #eaeaea;
 }
@@ -431,4 +491,161 @@ body {
 .actived {
     color: black;
     font-weight: 500;
+    text-decoration: underline;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    .icn_card {
+        width: 30px;
+    }
+
+    .btn_contact {
+        font-size: 10px;
+    }
+
+    .icn_dwln {
+        width: 13px;
+    }
+
+    .card_full {
+        padding: 40px 30px;
+    }
+
+    .warp_content_contact {
+        width: 80%;
+    }
+
+    .img_project {
+        height: 150px;
+    }
+
+    .btn_edit_delete {
+        padding: 3px 35px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .img_detail {
+        height: 200px;
+    }
+
+    .duration {
+        gap: 10px;
+    }
+
+    .right_detail {
+        width: 40%;
+    }
+    .nav_hbr{
+        display: none;
+    }
+    .hbr{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .card_full {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    .card_left {
+        width: 100%;
+    }
+
+    .icn_card {
+        width: 21px;
+    }
+
+    .icn_and_card {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lists_link_nav {
+        display: none;
+    }
+    .nav_hbr{
+        display: none;
+    }
+    .lk_flex{
+        display: flex;
+    }
+    .nav_hbr{
+        z-index: 10;
+        background-color: rgb(255, 255, 255);
+        top: 60px;
+        right: 40px;
+        position:absolute;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+}
+    .hbr_lk{
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        
+    }
+
+    .hbr{
+        display: flex;
+        margin: 5px 0px;
+        width: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        border: none;
+        padding: 10px 0px;
+    }
+    .st{
+        width: 100%;
+        height: 4px;
+        background-color: black;
+    }
+    .logo_nav{
+        margin: 10px 0px;
+        align-items: center;
+    }
+    .form_add{
+        width: 90%;
+    }
+    .card_my_project{
+        width: 80%;
+    }
+    .img_project{
+        height: 250px;
+    }
+    .svg_ck{
+        width: 25px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+    }
 }

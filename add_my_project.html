@@ -28,60 +28,71 @@
                     </li>
                 </ul>
             </div>
-            <a href="contact.html" class="btn_contact btn_nav">contact Me</a>
-        </div>
-    </nav>
-
+            <a href="contact.html" class="btn_contact btn_nav lists_link_nav">contact Me</a>
+            <button onclick="hbr_m()"  class="hbr">
+            <span class="st"></span>
+            <span class="st"></span>
+            <span class="st"></span>
+            </button>
+            <div class="nav_hbr" id="hbr">
+                <a class="hbr_lk link ac" href="/index.html">home</a>
+                <a class="hbr_lk link " href="/add_my_project.html">My Project</a>
+                <a href="contact.html" class="btn_contact btn_nav">contact Me</a>
+            </div>
+        </nav>
+        
     <div class="container_add_my_project">
         <div class="form_add_my_project flex">
             <h1>ADD MY PROJECT</h1>
-            <form action="" onsubmit="addProject(event)">
+            <form action="" class="form_add" onsubmit="addProject(event)">
                 <div class="label_input flex">
-                    <label for="project_name">project_name</label>
-                    <input class="ipn" type="text" id="project_name" name="project_name" placeholder="" >
+                    <label class="lb" for="project_name">project_name</label>
+                    <input class="ipn ipn_add" type="text" id="project_name" name="project_name" placeholder="">
                 </div>
                 <div class="star_end_date flex">
                     <div class="label_input flex">
-                        <label for="star_date">star_date</label>
-                        <input class="ipn" type="date" id="star_date" name="star_date" placeholder="" >
+                        <label class="lb" for="star_date">star_date</label>
+                        <input class="ipn ipn_add" type="date" id="star_date" name="star_date" placeholder="">
                     </div>
                     <div class="label_input flex">
-                        <label for="end_date">end_date</label>
-                        <input class="ipn" type="date" id="end_date" name="end_date" placeholder="" >
+                        <label class="lb" for="end_date">end_date</label>
+                        <input class="ipn ipn_add" type="date" id="end_date" name="end_date" placeholder="">
                     </div>
                 </div>
 
                 <div class="label_input flex">
-                    <label class="" for="description">description</label>
-                    <textarea name="description" id="descriptions" cols="40" rows="5"></textarea>
+                    <label class="lb" for="description">description</label>
+                    <textarea class=" ipn_add" name="description" id="descriptions" cols="40" rows="5"></textarea>
                 </div>
 
 
                 <div class="warp_ck_teknologi">
-                    <label for="ck_ipn">teknologi</label>
-                    <div class="">
-                        <input class="ck_ipn" type="checkbox" id="node_js" name="ck_ipn" value="node_js" placeholder="">
-                        <label for="node_js">node_js</label>
+                    <label class="" for="ck_ipn">teknologi</label>
+                    <div class=" add_tk">
+                        <input class=" ipn_add " type="checkbox" id="node_js" name="ck_ipn" value="node_js"
+                            placeholder="">
+                        <label class="ck_ipn" for="node_js">node_js</label>
 
-                        <input class="ck_ipn" type="checkbox" id="laravel" name="ck_ipn" value="laravel" placeholder="">
-                        <label for="laravel">laravel</label>
+                        <input class=" ipn_add " type="checkbox" id="laravel" name="ck_ipn" value="laravel"
+                            placeholder="">
+                        <label class="ck_ipn" for="laravel">laravel</label>
                     </div>
                     <div class="">
-                        <input class="ck_ipn" type="checkbox" id="react_js" name="ck_ipn" value="react_js"
-                            placeholder="">
-                        <label for="react_js">react_js</label>
+                        <input class=" ipn_add " type="checkbox" id="react_js" name="ck_ipn" value="react_js"
+                            ceholder="">
+                        <label class="ck_ipn" for="react_js">react_js</label>
 
-                        <input class="ck_ipn" type="checkbox" id="java" name="ck_ipn" value="java" placeholder="">
-                        <label for="java">java</label>
+                        <input class=" ipn_add " type="checkbox" id="java" name="ck_ipn" value="java" placeholder="">
+                        <label class="ck_ipn" for="java">java</label>
                     </div>
                 </div>
                 <div class="label_input flex">
                     <label for="upload_image" class="custom-file-label">upload_image</label>
                     <input class="custom-file-upload" type="file" id="upload_image" name="upload_image"
-                        placeholder="atack" hidden >
+                        placeholder="atack" hidden>
                 </div>
                 <div class="btn_form flex">
-                    <input type="submit" value="submit" class="btn_contact btn_contact_home">
+                    <input type="submit" value="submit" class="btn_contact btn_contact_home btn_add">
                 </div>
             </form>
         </div>
@@ -91,10 +102,11 @@
             <div class="warp_my_project flex" id="warp_my_project">
 
             </div>
-
+            
         </div>
     </div>
     <script src="/assets/js/add_my_project.js"></script>
+    <script src="assets/js/hamburger.js"></script>
 </body>
 
 </html>
