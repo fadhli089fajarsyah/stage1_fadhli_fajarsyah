@@ -1,0 +1,86 @@
+<!-- cssnya satu soalnya biar tidak mengulang style yang sama seperti btn contact me -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar ">
+        <div class="navbar_content flex">
+            <!-- nav left -->
+            <div class="wrapping_nav_left flex">
+                <img src="/assets/img/dw.png" alt="" srcset="" class="logo_nav">
+                <ul class="lists_link_nav flex">
+                    <li>
+                        <a class="link  ac" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="link" href="add_my_project.html">My Project</a>
+                    </li>
+                    <li>
+                        <a class="link" href="oop.html">oop</a>
+                    </li>
+                    <li>
+                        <a class="link actived  " href="hof.html">rating</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="contact.html" class="btn_contact btn_nav lists_link_nav">contact Me</a>
+            <button onclick="hbr_m()" class="hbr">
+                <span class="st"></span>
+                <span class="st"></span>
+                <span class="st"></span>
+            </button>
+    </nav>
+    <div class="nav_hbr" id="hbr">
+        <a class="hbr_lk link ac" href="/index.html">home</a>
+        <a class="hbr_lk link " href="/add_my_project.html">My Project</a>
+        <a class="hbr_lk link " href="/oop.html">oop</a>
+        <a class="link hbr_lk " href="hof.html">rating</a>
+        <a href="contact.html" class="btn_contact btn_nav">contact Me</a>
+    </div>
+
+    <!-- content -->
+    <div class="container_hof my_project">
+        <h1>rating</h1>
+        <div class="warp_rating">
+            <h1> Rating By Star</h1>
+            <div class="rating">
+                <button class="rating_btn" onclick="allCardRating()">All</button>
+                <button class="rating_btn" onclick="filter_rating(1)">
+                    1 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating_btn" onclick="filter_rating(2)">
+                    2 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating_btn" onclick="filter_rating(3)">
+                    3 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating_btn" onclick="filter_rating(4)">
+                    4 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating_btn" onclick="filter_rating(5)">
+                    5 <i class="fa-solid fa-star"></i>
+                </button>
+            </div>
+
+            <div class="warp_card_rating warp_my_project" id="warp_card_rating">
+
+            </div>
+        </div>
+
+        <script src="/assets/js/hamburger.js"></script>
+        <script src="/assets/js/hof.js"></script>
+</body>
+
+</html>
