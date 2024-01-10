@@ -8,9 +8,9 @@ function hitungHari(starDate, endDate) {
     // Hitung selisih dalam milidetik
     const selisih = tanggalAkhir - tanggalMulai;
 
-    // Konversi milidetik ke hari dan pastikan nilainya positif
+    // Konversi milidetik ke hari
     let totalHari = Math.abs(Math.floor(selisih / (1000 * 60 * 60 * 24)) % 30);
-
+    
     return totalHari;
 }
 

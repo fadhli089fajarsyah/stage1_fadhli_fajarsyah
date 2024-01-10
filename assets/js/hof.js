@@ -77,7 +77,6 @@ function allCardRating(){
 
 function filter_rating(rating) {
     const filtered_ratings = cardRating.filter((value) => value.rating === rating);
-
     const filtered_ratings_HTML = filtered_ratings.map((value) => {
         return `<div class="warp__card_oop">
                     <img src="${value.image}" class="img_oop" alt="">

@@ -6,6 +6,7 @@ Inheritance (Pewarisan)
 Polymorphism (untuk mengambil banyak bentuk objek)
 encapsulation(membuat isi dalam class atau object menjadi privasi atau memprotek)
  */
+
 class Card {
     #image = "";
     #content = "";

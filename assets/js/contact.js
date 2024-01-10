@@ -28,7 +28,6 @@ function  abc(event) {
         Your Message: ${message}
     `;
 
-    // Menampilkan alert dengan pesan yang telah dikonstruksi
     alert(alertMessage);
 
     // Mengalihkan ke link email setelah alert dikonfirmasi
